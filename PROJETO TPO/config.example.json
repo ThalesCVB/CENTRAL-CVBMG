@@ -1,0 +1,12 @@
+{
+  "SMTP_HOST": "smtp.office365.com",
+  "SMTP_PORT": "587",
+  "SMTP_USER": "seu.email@empresa.com",
+  "SMTP_PASS": "senha-de-app",
+  "SMTP_FROM": "seu.email@empresa.com",
+  "ANTHROPIC_API_KEY": "",
+  "NOTIFY_HOURS": "24",
+  "BASE_URL": "http://ENDERECO-DO-SERVIDOR:8000",
+  "ALLOWED_DOMAIN": "cvbmg.org.br",
+  "HOST": "127.0.0.1"
+}

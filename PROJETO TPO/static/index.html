@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Central CVB-MG</title>
+<meta name="theme-color" content="#0A111A">
+<script>try{var t=localStorage.getItem("cvb-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23E51E2A'/%3E%3Cpath fill='%23fff' d='M12 5h8v7h7v8h-7v7h-8v-7H5v-8h7z'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="auth" hidden></div>
+<div id="shell" hidden>
+  <header class="app-header">
+    <button class="icon-button mobile-menu" id="openDrawer" aria-label="Abrir menu"></button>
+    <a class="brand" href="#/" aria-label="CENTRAL CVB-MG — Início">
+      <img class="brand-logo logo-light" src="logo.png" alt="Cruz Vermelha Brasileira — Minas Gerais" width="58" height="58">
+      <img class="brand-logo logo-dark" src="logo-dark.png" alt="" aria-hidden="true" width="58" height="58">
+      <span class="brand-copy"><strong>CENTRAL</strong><span>CVB-MG</span></span>
+    </a>
+    <div class="search-wrap">
+      <label class="search" aria-label="Buscar"><span id="searchIcon"></span><input id="search" placeholder="Buscar tarefas, setores, pessoas..." autocomplete="off"><kbd>Ctrl + K</kbd></label>
+      <div class="search-results" id="searchResults" hidden></div>
+    </div>
+    <div class="header-actions">
+      <button class="icon-button" id="bell" aria-label="Notificações" title="Notificações"><span id="bellIcon"></span><span class="notification-count" id="bellCount" hidden>0</span></button>
+      <button class="user-menu" id="userMenu" aria-expanded="false"><span class="avatar" id="userAvatar"></span><span class="user-text"><span class="user-name" id="userName"></span><span class="user-dept" id="userRole"></span></span><span class="chevron" id="userChevron"></span></button>
+    </div>
+  </header>
+  <div class="layout" id="layout">
+    <aside class="sidebar" id="sidebar" aria-label="Navegação principal"></aside>
+    <main class="main" id="main"></main>
+    <aside class="right-panel" id="right"></aside>
+  </div>
+  <div class="drawer-overlay" id="drawerOverlay"></div>
+</div>
+<div id="modal" class="overlay" hidden><div class="modal" id="modalBody"></div></div>
+<div id="popover" class="popover" hidden></div>
+<div id="toast" class="toast" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>
